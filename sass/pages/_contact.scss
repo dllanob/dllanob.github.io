@@ -1,0 +1,157 @@
+.main-contact {
+	.wrapper {
+		padding: 0;
+		.service-title {
+			@media (max-width: 1000px) {
+				font-size: 30px !important;
+			}
+			@media (max-width: 370px) {
+				font-size: 28px !important;
+			}
+			.icon {
+				@media (max-width: 630px) {
+					display: block;
+				}
+				@media (max-width: 500px) {
+					font-size: 40px !important;
+				}
+			}
+		}
+		.service-sub {
+			color: $secondary-text;
+			font-family: $secondary-text-font-family;
+			font-weight: 100;
+			font-size: 25px;
+			@media (max-width: 1000px) {
+				font-size: 20px;
+			}
+		}
+		.wrap-contact {
+			margin: 50px 0 0 0;
+			.form-cont {
+				@media (max-width: 950px) {
+					width: 100%;
+				}
+				@media (max-width: 370px) {
+					padding: 0;
+				}
+				.input-field {
+					margin-bottom: 30px;
+					@media (max-width: 370px) {
+						margin-bottom: 15px;
+					}
+					input {
+						color: $secondary-text;
+					}
+					label {
+						font-size: 18px;
+						font-weight: 100;
+						font-family: $secondary-text-font-family;
+					}
+					textarea {
+						
+					}
+				}
+				/* label color */
+			   .input-field label {
+			     color: $secondary-text;
+			   }
+			   /* label focus color */
+			   .input-field input:focus + label {
+			     color: $secondary-color;
+			   }
+			   /* label underline focus color */
+			   .input-field input:focus {
+			     border-bottom: 1px solid $secondary-color;
+			     box-shadow: 0 1px 0 0 $secondary-color;
+			   }
+			   /* label focus color */
+			   .input-field textarea:focus + label {
+			     color: $secondary-color;
+			   }
+			   /* label underline focus color */
+			   .input-field textarea:focus {
+			     border-bottom: 1px solid $secondary-color;
+			     box-shadow: 0 1px 0 0 $secondary-color;
+			   }
+			   /* valid color */
+			   .input-field input[type=text].valid {
+			     border-bottom: 1px solid #0CBD11;
+			     box-shadow: 0 1px 0 0 #0CBD11;
+			   }
+			   /* invalid color */
+			   .input-field input[type=text].invalid {
+			     border-bottom: 1px solid red;
+			     box-shadow: 0 1px 0 0 red;
+			   }
+			   /* icon prefix focus color */
+			   .input-field .prefix.active {
+			     color: $secondary-color;
+			   }
+				.btn {
+					width: 150px;
+					height: 42px;
+					float: left;
+					margin-left: 10px;
+					color: $secondary-color;
+					border: 3px solid $secondary-color;
+					background: rgba(0,0,0,0);
+					@media (max-width: 950px) {
+						float: none;
+					}
+				}
+			}
+			.info-cont {
+				padding: 20px;
+				@media (max-width: 950px) {
+					width: 100%;
+				}
+				.info-wrap {
+					display: block;
+					.info {
+						margin-top: 30px;
+						@media (max-width: 950px) {
+							width: 32%;
+							margin-top: 20px;
+							vertical-align: top;
+							display: inline-block;
+						}
+						@media (max-width: 600px) {
+							width: 100%;
+							margin-top: 30px;
+						}
+						.icon {
+							color: $secondary-color;
+							padding: 10px;
+							-webkit-border-radius: 100%;
+							-moz-border-radius: 100%;
+							border-radius: 100%;
+							@media (max-width: 600px) {
+								font-size: 35px;
+							}
+						}
+						.text {
+							margin-top: 15px;
+							font-size: 18px;
+							font-weight: 100;
+							font-family: $secondary-text-font-family;
+							@media (max-width: 720px) {
+								font-size: 16px;
+							}
+							@media (max-width: 600px) {
+								font-size: 20px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.wrap-map {
+	margin-top: 50px;
+	@media (max-width: 800px) {
+		margin-top: 30px;
+		padding: 0 !important;
+	}
+}

@@ -1,0 +1,40 @@
+.video-cont {
+  height: 350px;
+  background: url("../images/bgvideo.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  .video-text-cont {
+    margin: 0 auto;
+    display: block;
+    color: $text-color;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.51);
+    .video-link {
+      color: $text-color;
+      .icon {
+        font-size: 50px;
+        -webkit-transition: all 0.4s ease;
+        -moz-transition: all 0.4s ease;
+        -ms-transition: all 0.4s ease;
+        -o-transition: all 0.4s ease;
+        transition: all 0.4s ease;
+      }
+      .icon:hover {
+        -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2);
+      }
+    }
+    .video-text {
+      font-size: 35px;
+      font-weight: 100;
+      font-family: $secondary-text-font-family;
+      @media (max-width: 400px) {
+        font-size: 28px;
+      }
+    }
+  }
+}
+

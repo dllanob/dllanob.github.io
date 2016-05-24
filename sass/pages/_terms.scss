@@ -1,0 +1,128 @@
+body {
+	background-color: $text-color;
+	.wrap {
+		background-color: $primary-color;
+		.logo-cont {
+			height: 100vh;
+			padding: 50px 20px;
+			@media (max-width: 1000px) {
+		   		width: 100% !important;
+		   		height: auto;
+		   		padding: 10px 20px;
+		   		margin-top: 25px;
+		    }
+			.logo {
+				width: 70%;
+				display: block;
+				margin: 50px auto 0 auto;
+				@media (max-width: 1000px) {
+			   		display: none;
+			    }
+			}
+			.logo-sm {
+				width: 400px;
+				display: none;
+				margin: 0 auto;
+				@media (max-width: 1000px) {
+			   		display: block;
+			    }
+			    @media (max-width: 600px) {
+			   		width: 60%;
+			    }
+			}
+			.redes {
+				width: 100%;
+				margin: 30px 0;
+				display: block;
+				text-align: center;
+				@media (max-width: 1000px) {
+			   		display: none;
+			    }
+				.icon-cont {
+					.icon {
+						font-size: 25px;
+						padding: 15px;
+						color: #fff;
+						background: #000;
+						-webkit-border-radius: 100%;
+						-moz-border-radius: 100%;
+						border-radius: 100%;
+					}
+			        .icon-facebook:hover {
+			          background-color: $facebook-color;
+			        }
+			        .icon-twitter:hover {
+			          background-color: $twitter-color;
+			        }
+			        .icon-instagram:hover {
+			          background-color: $instagram-color;
+			        }
+				}
+			}
+		}
+		.main {
+			padding: 25px;
+			height: 100vh;
+			background: $primary-color;
+			position: relative;
+			@media (max-width: 1000px) {
+		   		width: 100% !important;
+		   		padding: 0 25px 25px 25px;
+		    }
+		    @media (max-width: 700px) {
+		   		height: auto;
+		    }
+		    @media (max-width: 500px) {
+				padding: 10px;
+			}
+			.card-wrap {
+				.card-cont {
+					width: 100%;
+					.card {
+						height: 91vh;
+						overflow: scroll;
+						@media (max-width: 700px) {
+					   		height: auto;
+					    }
+						.card-content {
+							padding: 0 50px 50px 50px;
+							@media (max-width: 500px) {
+								padding: 0 30px 50px 30px;
+							}
+							.content-title {
+								padding-bottom: 15px;
+								color: $primary-text;
+								font-family: $title-font-family;
+								border-bottom: 2px solid $divider-color;
+								@media (max-width: 1200px) {
+							   		font-size: 30px;
+							    }
+							    @media (max-width: 400px) {
+									font-size: 22px;
+								}
+							}
+							.content-ph {
+								color: $secondary-text;
+								font-size: 18px;
+								font-weight: 100;
+								font-family: $secondary-text-font-family;
+								@media (max-width: 1200px) {
+							   		font-size: 16px;
+							    }
+							}
+						}
+					}
+				}
+			}
+			.btn {
+				bottom: 30px;
+				right: 30px;
+				position: fixed;
+				background-color: $secondary-color;
+				.icon {
+					font-size: 40px;
+				}
+			}
+		}
+	}
+}

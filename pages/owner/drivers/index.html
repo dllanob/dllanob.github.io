@@ -1,0 +1,135 @@
+<section class="map-wrap">
+  <section class="map-main">
+
+    <ng-map center="5.060209, -75.486463" zoom="17" class="map"
+      zoom-control="true"
+      street-view-control="false">
+      <marker position="5.060209, -75.486463" title="Hello World!"></marker>
+    </ng-map>
+
+    <div id="notification" class="notification"></div>
+
+    <div id="out" style="z-index: 9999999999999999999"></div>
+    
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal"> 
+      <div class="modal-content">
+        <div class="row tabs-main">
+          <div class="col s12">
+            <ul class="tabs">
+              <li class="tab col s3 tab"><a class="active" href="#test1">Servicios</a></li>
+              <li class="tab col s3 tab"><a href="#test2">Historial de Servicios</a></li>
+            </ul>
+          </div>
+          <div id="test1" class="col s12 tab-content">
+            <canvas id="serviceTypeChart" width="400" height="180"></canvas>
+          </div>
+          <div id="test2" class="col s12 tab-content">
+            <canvas id="serviceHistoryChart" width="400" height="180"></canvas>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <a href="#!" class="btn modal-action modal-close waves-effect waves-green">Cerrar</a>
+      </div>
+    </div>
+
+  </section>
+
+  <ul id="slide-out" class="side-nav fixed">
+   
+    <section class="drivers-cont">
+
+      <li class="sidenav-header">
+        <img class="logo" ondragstart='return false' src="../../assets/images/horizontal-purple-logo.png" alt="logo">
+      </li>
+
+      <nav class="search-input">
+        <div class="nav-wrapper">
+          <form>
+            <div class="input-field">
+              <input id="search" type="search" required>
+              <label for="search"><i class="material-icons">search</i></label>
+              <i class="material-icons">close</i>
+            </div>
+          </form>
+        </div>
+      </nav>
+
+      <li class="sidenav-item">
+        <div class="img-cont valign-wrapper">
+          <div class="img-main">
+            <img class="img valign" ondragstart='return false' src="../../assets/images/profile.jpg" alt="">
+            <div class="state suspended valign"></div>
+          </div>
+        </div>
+        <div class="info-cont">
+          <p class="name info">Carlos Arturo Vazques</p>
+          <p class="info">3187663450</p>
+          <p class="info">NAR607 - 0823</p>
+          <a href="#/driver/info" class="btn">Ver informacion</a>
+        </div>
+      </li>
+      <li class="sidenav-item">
+        <div class="img-cont valign-wrapper">
+          <div class="img-main">
+            <img class="img valign" ondragstart='return false' src="../../assets/images/profile.jpg" alt="">
+            <div class="state suspended valign"></div>
+          </div>
+        </div>
+        <div class="info-cont">
+          <p class="name info">Carlos Arturo Vazques</p>
+          <p class="info">3187663450</p>
+          <p class="info">NAR607 - 0823</p>
+          <a href="#/driver/info" class="btn">Ver informacion</a>
+        </div>
+      </li>
+      <li class="sidenav-item">
+        <div class="img-cont valign-wrapper">
+          <div class="img-main">
+            <img class="img valign" ondragstart='return false' src="../../assets/images/profile.jpg" alt="">
+            <div class="state suspended valign"></div>
+          </div>
+        </div>
+        <div class="info-cont">
+          <p class="name info">Carlos Arturo Vazques</p>
+          <p class="info">3187663450</p>
+          <p class="info">NAR607 - 0823</p>
+          <a href="#/driver/info" class="btn">Ver informacion</a>
+        </div>
+      </li>
+      <li class="sidenav-item">
+        <div class="img-cont valign-wrapper">
+          <div class="img-main">
+            <img class="img valign" ondragstart='return false' src="../../assets/images/profile.jpg" alt="">
+            <div class="state suspended valign"></div>
+          </div>
+        </div>
+        <div class="info-cont">
+          <p class="name info">Carlos Arturo Vazques</p>
+          <p class="info">3187663450</p>
+          <p class="info">NAR607 - 0823</p>
+          <a href="#/driver/info" class="btn">Ver informacion</a>
+        </div>
+      </li>
+      <li class="sidenav-item">
+        <div class="img-cont valign-wrapper">
+          <div class="img-main">
+            <img class="img valign" ondragstart='return false' src="../../assets/images/profile.jpg" alt="">
+            <div class="state suspended valign"></div>
+          </div>
+        </div>
+        <div class="info-cont">
+          <p class="name info">Carlos Arturo Vazques</p>
+          <p class="info">3187663450</p>
+          <p class="info">NAR607 - 0823</p>
+          <a href="#/driver/info" class="btn">Ver informacion</a>
+        </div>
+      </li>
+
+    </section> 
+
+  </ul>
+  
+</section>

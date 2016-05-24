@@ -1,0 +1,448 @@
+<!doctype html>
+<html class="no-js" lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=no">
+    <title>CityTaxi | Aplicación Móvil</title>
+    
+    <meta name="application-name" content="CityTaxi" />
+    <meta name="author" content="CityTaxi" />
+    <meta name="description" content="Movilízate en taxi a cualquier destino a tiempo de forma segura. CityTaxi es una aplicación te brinda el mejor servicio a un sólo unos pocos clicks." />
+    <meta name="keywords" content="citytaxi, taxi, servicio, colombia, compartir, excelente, movilidad, seguro, brinda, brindamos, colombianos, manizales, medellin, transformando, wayra, bogotá, ciudades." />
+
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-ic"/>
+
+    <!-- Google Chrome Toolbar Color -->
+    <meta name="theme-color" content="#f4d833">
+
+    <!-- Open Graph Metatags -->
+    <meta property="og:title" content="CityTaxi" />
+    <meta property="og:description" content="Movilízate en taxi a cualquier destino a tiempo de forma segura. CityTaxi es una aplicación te brinda el mejor servicio a un sólo unos pocos clicks." />
+    <meta property="og:image" content="http://citytaxiapp.co/images/facebook.jpg" />
+    
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Cabin:400,500,600,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat+Alternates:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100' rel='stylesheet' type='text/css'>
+
+    <!-- build:css css/vendor.css -->
+    <!-- bower:css -->
+    <link type="text/css" rel="stylesheet" href="vendor/Materialize/bin/materialize.css"/>
+    <link rel="stylesheet" rel="stylesheet" href="vendor/normalize-css/normalize.css" />
+    <link rel="stylesheet" rel="stylesheet" href="vendor/Animate/animate.min.css" />
+    <link rel="stylesheet" type="text/css" href="vendor/slickslides/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="vendor/slickslides/slick-theme.css"/>
+    <link rel="stylesheet" href="vendor/magnific-popup/dist/magnific-popup.css">
+
+    <link rel="stylesheet" type="text/css" href="vendor/hovergrid/css/set1.css" />
+    <link rel="stylesheet" href="vendor/Morphext/dist/morphext.css">
+    <link rel="stylesheet" href="vendor/menu/css/component.css" />
+    <link rel="stylesheet" href="vendor/icomoon-bower/style.css"/>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css css/main.css -->
+    <link rel="stylesheet" href="assets/css/main.min.css">
+    <!-- endbuild -->
+
+    <!-- build:js js/vendor/modernizr.js -->
+    <script src="vendor/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+
+    <!-- Facebook Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+      n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+      document,'script','//connect.facebook.net/en_US/fbevents.js');
+
+      fbq('init', '1959601854265479');
+      fbq('track', "PageView");
+      fbq('track', 'ViewContent');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1959601854265479&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+  </head>
+  <body class="body">
+    <!--[if lt IE 10]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+        <ul id="slide-out" class="side-nav">
+          <img class="logo" src="assets/images/logo-con-simbolo-city.png" alt="logo-citytaxi">
+          <li><a href="/">Inicio</a></li>
+          <li><a href="pages/services/business">Empresas</a></li>
+          <li><a href="pages/services/taxidriver">Conductores</a></li>
+          <li><a href="pages/services/owner">Propietario</a></li>
+          <li><a href="pages/contact/">Contacto</a></li>
+          <li><a href="pages/terms/">Términos</a></li>
+          <section class="menu-social">
+                <p class="menu-social_title">Conéctate con nosotros</p>
+                <ul class="menu-social_btn">
+                    <a href="https://www.facebook.com/citytaxi.co/?fref=ts" class="social-list facebook" target="_blank"><li><span class="icon-facebook"></span></li></a>
+                    <a href="https://twitter.com/citytaxi_co" class="social-list twitter" target="_blank"><li><span class="icon-twitter"></span></li></a>
+                    <a href="https://www.instagram.com/citytaxi_co/" class="social-list instagram" target="_blank"><li><span class="icon-instagram"></span></li></a>
+                </ul>
+          </section>
+        </ul>
+
+        <section class="wrap-container">
+
+          <a href="#" data-activates="slide-out" class="button-collapse show-on-large z-depth-1 hoverable waves-light"><i class="icon mdi-navigation-menu"></i></a>
+
+          <section class="intro-container">
+
+            <div class="covervid-wrapper ">
+              <div class="filter"></div>
+              <video class="covervid-video" autoplay loop poster="videos/img/Going-Places.jpg">
+                  <source src="videos/webm/Going-Places.webm" type="video/webm">
+                  <source src="videos/mp4/Going-Places.mp4" type="video/mp4">
+              </video>
+            </div>
+
+            <section class="logo-container">
+              <img class="logo-img wow bounceInDown" src="assets/images/horizontal-purple-logo.png" ondragstart='return false' alt="citytaxi-logo">
+              <p class="intro-text">Pedir un taxi nunca fue tan <br><span id="js-rotating" class="intro-text-bold">fácil, rápido, seguro</span>.</p>
+              
+              <ul class="intro-stores-container">
+                <a href="https://itunes.apple.com/co/app/citytaxi/id598987520?mt=8" class="img-cont wow bounceInUp" data-wow-delay=".3s" target="_blank">
+                  <li>
+                    <img class="store-img" src="assets/images/appstore.png" alt="">
+                    <img class="store-img-sm" src="assets/images/appstore-sm.png" alt="">
+                  </li>
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=com.mobility.citytaxi&hl=es_419" class="img-cont wow bounceInUp" data-wow-delay=".5s" target="_blank">
+                  <li>
+                    <img class="store-img" src="assets/images/playstore.png" alt="">
+                    <img class="store-img-sm" src="assets/images/playstore-sm.png" alt="">
+                  </li>
+                </a>
+                <a href="https://www.microsoft.com/es-es/store/apps/citytaxi/9wzdncrdx6m4" class="img-cont wow bounceInUp" data-wow-delay=".7s" target="_blank">
+                  <li>
+                    <img class="store-img" src="assets/images/wfstore.png" alt="">
+                    <img class="store-img-sm" src="assets/images/wfstore-sm.png" alt="">
+                  </li>
+                </a>
+              </ul>
+              
+              <a id="arrowDown" class="arrow-down" href="" onclick="return false;"><i class="material-icons arrow-down_icon animated infinite bounce">expand_more</i></a>
+            </section>
+          </section>
+
+          <section id="info-container" class="info-container row">
+            <section class="info-container_text col s6 wow fadeInLeft" data-wow-offset="250">
+              <h3 class="info-container_text_title">Qué la hace especial?</h3>
+              <p class="info-container_text_ph">Brindamos un servicio de taxi seguro y de calidad, transformando la movilidad de los Colombianos en las ciudades de Manizales, Pereira, Armenia, Yopal y Valledupar.</p><br>
+
+              <div class="info-container-icons row">
+                <div class="tabs-cont col s12">
+                  <ul class="tabs icons">
+                    <li class="tab col s3"><a href="#test1"><i class="material-icons">assessment</i></a></li>
+                    <li class="tab col s3"><a class="active" href="#test2"><i class="material-icons">attach_money</i></a></li>
+                    <li class="tab col s3"><a href="#test3"><i class="material-icons">phonelink_lock</i></a></li>
+                    <li class="tab col s3"><a href="#test4"><i class="material-icons">alarm</i></a></li>
+                  </ul>
+                </div>
+                <div id="test1" class="tabs-content col s12">
+                  <h4>Reportes</h4>
+                  <p>Reportes en línea como herramienta de búsqueda y asignación para no perder servicios.</p>
+                </div>
+                <div id="test2" class="tabs-content col s12">
+                  <h4>Propina</h4>
+                  <p>En el caso urgente de necesitar un servicio, se podra adicionar una propina voluntaria.</p>
+                </div>
+                <div id="test3" class="tabs-content col s12">
+                  <h4>Seguridad</h4>
+                  <p>Seguridad tanto para el conductor como para los usuarios de la aplicación.</p>
+                </div>
+                <div id="test4" class="tabs-content col s12">
+                  <h4>Rapidez</h4>
+                  <p>Solicitar el taxi más cercano con un promedio de asignación de 20 segundos.</p>
+                </div>
+              </div>
+              <!-- <ul class="info-container-icons row">
+                <li class="icons col s3"><i class="material-icons">local_taxi</i></li> 
+                <li class="icons col s3"><i class="material-icons">place</i></li>  
+                <li class="icons col s3"><i class="material-icons">phonelink_lock</i></li>
+                <li class="icons col s3"><i class="material-icons">business_center</i></li>
+              </ul>
+              <h4>Seguridad</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem molestiae totam iste illo dicta rerum officiis animi iusto voluptatum corporis ipsa blanditiis amet, tenetur saepe sequi dignissimos consequatur fugiat quae.</p> -->
+            </section>
+
+            <section class="info-container_img col s6 wow fadeInRight" data-wow-offset="250">
+              <img class="devices-img" src="assets/images/devices.png" ondragstart='return false' alt="arrow">
+            </section>
+          </section>
+
+          <section id="indicators-container" class="indicators-container row">
+            <section class="map-cont col s6 wow fadeInLeft">
+                <h2 class="facts-title">5 ciudades, una sola aplicación</h2>
+                <img class="map-img" src="assets/images/map.png" ondragstart='return false' alt="map">
+            </section>
+            <ul class="facts-cont row col s6 wow fadeInRight">
+              <div class="facts-cont-info">
+                <h2 class="facts-title">5 ciudades, una sola aplicación</h2>
+                <hr class="separator">
+                <p class="facts-text">Trabajamos día a día para llegar a más lugares y poderte brindar la mejor experiencia de transporte en tu ciudad. Actualmente nos encontramos en las ciudades de Manizales, Pereira, Armenia, Yopal y Valledupar y pronto cerca de ti.</p>
+                <li class="indicator col s4 wow bounceInUp" data-wow-delay=".3s">
+                  <span class="indicator-number">+<span class="counter">+100</span>K</span>
+                  <p class="indicator-text">Descargas</p>
+                </li>
+                <li class="indicator col s4 wow bounceInUp borders" data-wow-delay=".9s">
+                  <span class="indicator-number counter">5</span>
+                  <p class="indicator-text">Prox. Ciudades</p>
+                </li>
+                <li class="indicator col s4 wow bounceInUp" data-wow-delay="1.2s">
+                  <span class="indicator-number counter">3</span>
+                  <p class="indicator-text">Plataformas</p>
+                </li>
+              </div>
+            </ul>
+          </section>
+
+          <!-- <section class="steps">
+            <h3 class="steps-title">¿Como pedir un taxi?</h3>
+            <ul class="steps-container row">
+              <li class="img-container col s3">
+                <img src="assets/images/step1.png" class="step-img" alt="">
+                <p class="step-text">Abre la aplicación.</p>
+              </li>
+              <li class="img-container col s3">
+                <img src="assets/images/step2.png" class="step-img" alt="">
+                <p class="step-text">Indica tu posición.</p>
+              </li>
+              <li class="img-container col s3">
+                <img src="assets/images/step3.png" class="step-img" alt="">
+                <p class="step-text">Solicita tu taxi.</p>
+              </li>
+              <li class="img-container col s3">
+                <img src="assets/images/step4.png" class="step-img" alt="">
+                <p class="step-text">Confirma tu solicitud.</p>
+              </li>
+            </ul>
+          </section> -->
+
+          <section class="services-container">
+            <h3 class="services-title">Nuestros Servicios</h3>
+            <section class="services row">
+              
+              <div class="grid">
+                <figure class="effect-roxy wow fadeInUp">
+                  <img src="assets/images/service1.jpg" alt="service-img"/>
+                  <figcaption>
+                    <h2 class="card-title">Empresas <span>citytaxi</span></h2>
+                    <p class="card-text">La aplicación para empresas que cuenta con diferentes servicios para la administración.</p>
+                    <a href="pages/services/business">View more</a>
+                  </figcaption>     
+                </figure>
+                <figure class="effect-roxy wow fadeInUp" data-wow-delay=".3s">
+                  <img src="assets/images/service2.jpg" alt="service-img"/>
+                  <figcaption>
+                    <h2 class="card-title">Conductores <span>citytaxi</span></h2>
+                    <p class="card-text">Aplicación que le permite al conductor del taxi recibir los servicios solicitados a travez de: WEB, IVR, PBX, APP.</p>
+                    <a href="pages/services/taxidriver">View more</a>
+                  </figcaption>     
+                </figure>
+                <figure class="effect-roxy wow fadeInUp" data-wow-delay=".6s">
+                  <img src="assets/images/service3.jpg" alt="service-img"/>
+                  <figcaption>
+                    <h2 class="card-title">Propietarios <span>citytaxi</span></h2>
+                    <p class="card-text">Un modelo estratégico de negocios para un mejor R.O.I. Con  servicio para la administración del vehículo.</p>
+                    <a href="pages/services/owner">View more</a>
+                  </figcaption>     
+                </figure>
+              </div>
+              <!-- <section class="service-cont col s4">
+                
+                <div class="card darken-1">
+                  <div class="card-content white-text">
+                    <span class="card-title">Empresas</span>
+                    <p class="card-text">La aplicación para empresas servicios como indicadores en tiempo real, módulo administrativo, adaptación tecnológica a las necesidades de la empresa, etc...</p>
+                  </div>
+                  <div class="card-action">
+                    <a href="services/business/" class="btn-cont valign-wrapper  waves-effect waves-light" href="#"><i class="material-icons icon valign">arrow_forward</i></a>
+                  </div>
+                </div>
+              </section>
+
+              <section class="service-cont col s4">
+                
+                <div class="card darken-1">
+                  <div class="card-content white-text">
+                    <span class="card-title">Conductores</span>
+                    <p class="card-text">La aplicación CityTaxi - Taxista, le permite al conductor del taxi recibir los servicios solicitados a travez de: WEB, IVR, PBX, APP.</p>
+                  </div>
+                  <div class="card-action">
+                    <a href="services/business/" class="btn-cont valign-wrapper  waves-effect waves-light" href="#"><i class="material-icons icon valign">arrow_forward</i></a>
+                  </div>
+                </div>
+              </section>
+
+              <section class="service-cont col s4">
+                
+                <div class="card darken-1">
+                  <div class="card-content white-text">
+                    <span class="card-title">Propietario</span>
+                    <p class="card-text">Un modelo estratégico de negocios para un mejor R.O.I. Con éste servicio se podrá conocer la hubicación exacta del taxi, podrá tambien tener un control de ingresos y gastos y un sinnumero de ayudas adicionales.</p>
+                  </div>
+                  <div class="card-action">
+                    <a href="services/business/" class="btn-cont valign-wrapper  waves-effect waves-light" href="#"><i class="material-icons icon valign">arrow_forward</i></a>
+                  </div>
+                </div>
+              </section> -->
+            </section>
+          </section>
+
+          <section class="video-cont valign-wrapper">
+            <section class="video-text-cont valign wow pulse">
+              <a href="https://www.youtube.com/watch?v=WNNytNPaklc" class="video-link test-popup-link"><i class="material-icons icon">play_circle_outline</i></a>
+              <h5 class="video-text">Video presentación</h5>
+            </section>                 
+          </section>
+          
+          <section class="experience-cont">
+            <h3 class="experience-title">Experiencias</h3>
+            <div class="slide-container">
+
+              <div class="experience">
+                <span class="icon-twitter icon"></span>
+                <p class="experience-text"><i>Excelente servicio. La utilidad de la APP se refleja en la puntualidad, oportunidad, y calidad que se recibe en el servicio de taxi.</i></p>
+                <p class="experience-author">@AsmedHeredia</p>
+              </div>
+
+              <div class="experience">
+                <span class="icon-twitter icon"></span>
+                <p class="experience-text"><i>Muy efectiva. Esta aplicación me ha gustado demasiado por que es muy efectiva en cuanto al servicio y el servicio es muy seguro.</i></p>
+                <p class="experience-author">@AlejoDiaz</p>
+              </div>
+
+              <div class="experience">
+                <span class="icon-twitter icon"></span>
+                <p class="experience-text"><i>Una excelente App, el servicio es rápido, seguro y efectivo. Es de muy rápida atención al asignar el servicio de taxi.</i></p>
+                <p class="experience-author">@SolLoaizaM</p>
+              </div>
+              <div class="experience">
+                <span class="icon-twitter icon"></span>
+                <p class="experience-text"><i>Excelente. En mi ciudad llegan de una al momento de pedirlos. Una app que brinda seguridad.</i></p>
+                <p class="experience-author">@JuanMartinT</p>
+              </div>
+              <div class="experience">
+                <span class="icon-twitter icon"></span>
+                <p class="experience-text"><i>Excelente! Esta es la aplicación que uno como usuario necesita, Felicidades.</i></p>
+                <p class="experience-author">@MichaelAscanta</p>
+              </div>
+            </div>
+          </section>
+
+          <section class="awards-cont">
+            <h3 class="awards-title">Hablan de nosotros</h3>
+            <p class="awards-ph">Trabajamos cada día para proporcionar una solución de movilidad acorde con las necesidades actuales, por tal razón nuestros esfuerzos han sido galardonados por diferentes entidades.</p>
+            <ul class="awards-logos-cont">
+              <li class="logo-cont"><img src="assets/images/wayralogo.png" class="logo-img wayra" alt="wayra"></li>
+              <li class="logo-cont"><img src="assets/images/cocrealogo.png" class="logo-img cocrea" alt="cocrea"></li>
+              <li class="logo-cont"><img src="assets/images/appscologo.png" class="logo-img appsco" alt="appsco"></li>
+              <li class="logo-cont"><img src="assets/images/aviancalogo.png" class="logo-img avianca" alt="avianca"></li>
+              <li class="logo-cont"><img src="assets/images/minticlogo.png" class="logo-img mintic" alt="mintic"></li>
+              <li class="logo-cont"><img src="assets/images/rdeclogo.png" class="logo-img rdec" alt="rdec"></li>
+            </ul>
+          </section>
+
+          <section class="faq-cont">
+            <h3 class="faq-title">Preguntas más frecuentes (FAQs)</h3>
+            <p class="faq-ph">Con las siguientes preguntas pretendemos reponder las inquietudes más comunes de los usuarios que surgen a partir del uso de la aplicación. Para preguntas o inquietudes adicionales puedes dirigirte a la sección de contacto y con gusto atenderemos todas tus dudas.</p>
+            <section class="faq-main row">
+              <section class="faq-img col s6 wow fadeInLeft">
+                <img src="assets/images/mockuphand.png" class="img" alt="mockup">
+              </section>
+
+              <section class="faq-questions-cont col s6 wow fadeInRight">
+                <ul class="collapsible" data-collapsible="accordion">
+                  <li>
+                    <div class="collapsible-header active"><i class="material-icons">add_box</i>¿Cómo puedo obtenerla?</div>
+                    <div class="collapsible-body"><p class="body-text">Para obtener la aplicación debes dirigirte a la tienda virtual de tu smartphone y buscar la aplicación CityTaxi, a contunuación deberas instalarla para empezar a utilizar nuestro servicio.</p></div>
+                  </li>
+                  <li>
+                    <div class="collapsible-header"><i class="material-icons">add_box</i>¿Cómo puedo usarla?</div>
+                    <div class="collapsible-body"><p class="body-text">Para solicitar un servicio a travez de la aplicación inicialmente debes encender el GPS de tu dispositivo, a continuación te debes dirigir a la aplicación y verificar que la posición sea correcta para después pulsar el botón 'TAXI' e indicar tu dirección y referencia. Luego pulsa 'Solicitar' y espera a que tu taxi sea asignado. </p></div>
+                  </li>
+                  <li>
+                    <div class="collapsible-header"><i class="material-icons">add_box</i>¿Cómo la actualizo?</div>
+                    <div class="collapsible-body"><p class="body-text">Para actualizar la aplicación debes dirigirte a la tienda virtual de tu smartphone y buscar la aplicación CityTaxi, luego debes pulsar la opcion 'Actualizar'. Si esta opción no aparece sera porque cuentas con la última versión de la aplicación.</p></div>
+                  </li>
+                  <li>
+                    <div class="collapsible-header"><i class="material-icons">add_box</i>¿Licencia de la Aplicación?</div>
+                    <div class="collapsible-body"><p class="body-text">Para consultar todo a cerca de la licencia de la aplicación debes dirigirte a <a href="">http://es.citytaxiapp.com/terms/</a> y alli podras encontrar toda la información correspondiente.</p></div>
+                  </li>
+                  <li>
+                    <div class="collapsible-header double"><i class="material-icons">add_box</i>¿Cómo puedo obtener soporte?</div>
+                    <div class="collapsible-body"><p class="body-text">Para obtener soporte puedes dirigirte a la parte inferior de la página donde encontraras una sección de contacto, o tambien puedes escribirnos directamente a nuestro email info@citytaxiapp.com.</p></div>
+                  </li>
+                </ul>
+              </section>
+            </section>
+          </section>
+            
+          <section class="contact-cont">
+            <section class="contact-main row wow fadeInUp">
+              <section class="contact-ph col s7">
+                <h5>Mantener en contacto con nuestros clientes es importante para nosotros.</h5>
+                <p>Para esto podrás escribirnos a través del formulario de contacto al cual puedes acceder desde del botón que encuentras a continuación. Allí podras enviar todas tus dudas e inquietudes, las cuales trataremos de responder en el menor tiempo posible.</p>
+              </section>
+              <section class="contact-action col s5 valign-wrapper">
+                <p class="valign text">Preguntas o inquietudes?</p>
+                <p class="valign text">Contáctate inmediatamente con nostrosotros.</p>
+                <a href="contact/" class="waves-effect waves-light btn valign">Escríbenos</a>
+              </section>
+            </section>
+          </section>
+
+          <footer class="footer row">
+            <section class="footer-wrap">
+              <ul class="redes col s4 row">
+                <li class="icon-cont col s4"><a href="https://www.facebook.com/citytaxi.co/?fref=ts" target="_blank"><span class="icon icon-facebook"></span></a></li>
+                <li class="icon-cont col s4"><a href="https://twitter.com/citytaxi_co" target="_blank"><span class="icon icon-twitter"></span></a></li>
+                <li class="icon-cont col s4"><a href="https://www.instagram.com/citytaxi_co/" target="_blank"><span class="icon icon-instagram"></span></a></li>
+              </ul>
+              <a href="terms/" class="terminos col s4">Términos y condiciones.</a>
+              <p class="copyright col s4">Mobility Solutions S.A.S &copy; 2016</p>
+            </section>
+          </footer>
+        </section>
+
+    
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+
+    <!-- build:js js/vendor.js -->
+    <!-- bower:js -->
+    <script src="vendor/jquery/dist/jquery.min.js"></script>
+    <script src="vendor/covervid/covervid.min.js"></script>
+    <script src="vendor/Morphext/dist/morphext.min.js"></script>
+    <script src="vendor/Materialize/dist/js/materialize.min.js"></script>
+    <script src="vendor/menu/js/classie.js"></script>
+    <script src="vendor/menu/js/sidebarEffects.js"></script>
+    <script src="vendor/slickslides/slick.min.js"></script>
+    <script src="vendor/waypoints/lib/noframework.waypoints.min.js"></script>
+    <script src="vendor/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+    <script src="vendor/wow/dist/wow.min.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js js/main.js -->
+    <script src="assets/js/main.min.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>

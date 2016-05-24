@@ -1,0 +1,53 @@
+.experience-cont {
+  height: auto;
+  margin: 0 auto;
+  max-width: 1300px;
+  padding: 50px 0 80px 0;
+  display: block;
+  text-align: center;
+  background: #fff;
+  .experience-title {
+    color: $primary-text;
+    font-family: $title-font-family;
+    @media (max-width: 400px) {
+      font-size: 33px;
+    }
+  }
+  .slide-container {
+    height: auto;
+    margin-top: 50px;
+    .experience {
+      .icon {
+        color: $twitter-color;
+        font-size: 40px;
+      }
+      .experience-text {
+        font-size: 28px;
+        font-weight: 100;
+        margin: 20px 100px 30px 100px;
+        font-family: $secondary-text-font-family;
+        color: $secondary-text;
+        @media (max-width: 1000px) {
+          font-size: 25px;
+        }
+        @media (max-width: 600px) {
+          font-size: 22px;
+          margin: 20px 70px 30px 70px;
+        }
+        @media (max-width: 600px) {
+          font-size: 18px;
+          margin: 20px 40px 30px 40px;
+        }
+        @media (max-width: 400px) {
+          margin: 20px 25px 30px 25px;
+        }
+      }
+      .experience-author {
+        font-size: 20px;
+        font-family: $secondary-text-font-family;
+      }
+    }
+  }
+}
+
+

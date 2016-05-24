@@ -1,0 +1,70 @@
+.contact-cont {
+  background: url("../images/bg-parallax.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding: 150px 0;
+  @media (max-width: 700px) {
+    padding: 100px 0;
+  }
+  @media (max-width: 400px) {
+    padding: 60px 0;
+  }
+  .contact-main {
+    width: 70%;
+    max-width: 1000px;
+    height: auto;
+    display: table;
+    margin: 0 auto;
+    background: $primary-color;
+    color: $secondary-text;
+    font-family: $secondary-text-font-family;
+    @media (max-width: 500px) {
+      width: 85%;
+    }
+    .contact-ph {
+      padding: 50px 30px;
+      font-weight: 100;
+      display: table-cell;
+      background-color: $text-color;
+      @media (max-width: 900px) {
+        width: 100% !important;
+        text-align: center;
+        padding: 50px;
+      }
+      @media (max-width: 400px) {
+        padding: 30px 20px;
+      }
+    }
+    .contact-action {
+      padding: 50px 30px;
+      display: table-cell;
+      text-align: center;
+      font-weight: 700;
+      color: $primary-color-dark;
+      background: $primary-color;
+      @media (max-width: 900px) {
+        width: 100% !important;
+      }
+      @media (max-width: 400px) {
+        padding: 30px 20px;
+      }
+      .text {
+        font-size: 18px;
+        font-weight: 100;
+        margin-bottom: 10px;
+      }
+      .btn {
+        width: 170px;
+        height: auto;
+        color: $primary-color-dark;
+        margin: 20px auto 0 auto;
+        background: rgba(0, 0, 0, 0);
+        border: 2px solid $primary-color-dark;
+        box-shadow: none;
+        z-index: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+.footer {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 0;
+  display: block;
+  text-align: center;
+  background: $primary-color;
+  font-family: $secondary-text-font-family;
+  font-weight: 100;
+  font-size: 17px;
+  color: $primary-color-dark;
+  .footer-wrap {
+    display: block;
+    margin: 0 auto;
+    max-width: 1300px;
+    .redes {
+      margin: 0;
+      padding: 0 10%;
+      @media (max-width: 500px) {
+        display: block;
+        margin: 0 auto;
+        float: none;
+        width: 60% !important;
+      }
+      .icon-cont {
+        @media (max-width: 500px) {
+          width: 33% !important;
+        }
+        .icon {
+          color: $primary-color-dark;
+          font-size: 22px;
+        }
+        .icon-facebook:hover {
+          color: $facebook-color;
+        }
+        .icon-twitter:hover {
+          color: $twitter-color;
+        }
+        .icon-instagram:hover {
+          color: $instagram-color;
+        }
+      }
+    }
+    .terminos {
+      text-decoration: underline;
+      color: $primary-color-dark;
+      @media (max-width: 500px) {
+        margin: 15px 0;
+        width: 100% !important;
+      }
+    }
+    .copyright {
+      @media (max-width: 500px) {
+        width: 100% !important;
+      }
+    }
+  }
+}

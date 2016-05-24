@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html ng-app="ownerService">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=no">
+    <title>CityTaxi</title>
+    
+    <meta name="application-name" content="CityTaxi" />
+    <meta name="author" content="CityTaxi" />
+    <meta name="description" content="Movilízate en taxi a cualquier destino a tiempo de forma segura. CityTaxi es una aplicación te brinda el mejor servicio a un sólo unos pocos clicks." />
+    <meta name="keywords" content="citytaxi, taxi, servicio, colombia, compartir, excelente, movilidad, seguro, brinda, brindamos, colombianos, manizales, medellin, transformando, wayra, bogotá, ciudades." />
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="shortcut icon" href="../../favicon.ico" type="image/x-ic"/>
+
+    <!-- Google Chrome Toolbar Color -->
+    <meta name="theme-color" content="#f4d833">
+    
+    <!-- Open Graph Metatags -->
+    <meta property="og:title" content="CityTaxi" />
+    <meta property="og:description" content="Movilízate en taxi a cualquier destino a tiempo de forma segura. CityTaxi es una aplicación te brinda el mejor servicio a un sólo unos pocos clicks." />
+    <meta property="og:image" content="www.citytaxiapp.com/assets/images/facebook.jpg" />
+    
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Cabin:400,500,600,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat+Alternates:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100' rel='stylesheet' type='text/css'>
+
+    <!-- build:css css/vendor.css -->
+    <!-- bower:css -->
+    <link type="text/css" rel="stylesheet" href="../../vendor/Materialize/bin/materialize.css"/>
+    <link rel="stylesheet" rel="stylesheet" href="../../vendor/normalize-css/normalize.css" />
+    <link rel="stylesheet" href="../../vendor/magnific-popup/dist/magnific-popup.css">
+    <link rel="stylesheet" href="../../vendor/Morphext/dist/morphext.css">
+    <link rel="stylesheet" href="../../vendor/icomoon-bower/style.css"/>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css css/main.css -->
+    <link rel="stylesheet" href="../../assets/css/main.min.css">
+    <!-- endbuild -->
+
+    <!-- build:js js/vendor/modernizr.js -->
+    <script src="../../vendor/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+</head>
+
+  <body class="body">
+    <div ui-view></div>
+  </body>
+  
+  <script src="../../vendor/jquery/dist/jquery.min.js"></script>
+  <script src="../../vendor/angular/angular.min.js"></script>
+  <script src="../../vendor/Materialize/dist/js/materialize.min.js"></script>
+  <script src="../../vendor/ngmap/build/scripts/ng-map.min.js"></script>
+  <script src='http://maps.googleapis.com/maps/api/js?sensor=false&language=es'></script>
+  <script src="../../vendor/Chart.js/dist/Chart.min.js"></script>
+  <script src="../../vendor/covervid/covervid.min.js"></script>
+  <script src="../../vendor/angular-ui-router/release/angular-ui-router.min.js"></script>
+  <script src="index.module.js"></script>
+  <script>
+    $(".button-collapse").sideNav();
+  </script>
+  <script>
+    $(document).ready(function(){
+      // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+      $('.modal-trigger').leanModal();
+    });
+  </script>
+</html>
