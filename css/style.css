@@ -39,8 +39,6 @@ background: rgba(10, 10, 10, 0.97);
     padding-left: 33px;
     color: #fff;
     text-shadow: 1px 1px 1px #000;
-
-
 }
 span.close.pull-right {
 font-size: 20px;
@@ -329,6 +327,12 @@ input { outline: none; }
 	width: 100%;
 	clear: both; 	
 }
+
+.text-header {
+	margin: 0 !important;
+	text-shadow: 2px 2px 2px #000 !important;
+}
+
 
 /*-----------------------------------------------------------------------------------*/
 /*	04: COUNTDOWN PAGE
