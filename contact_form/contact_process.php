@@ -16,6 +16,7 @@ $ciu = stripslashes($_POST['ciu']);
 $name = stripslashes($_POST['name']);
 $correo = trim($_POST['email']);
 $cel = trim($_POST['cel']);
+$message = stripslashes($_POST['message']);
 /*$subject = "Contacto Landing Maestría en ENSEÑANZA DE LAS CIENCIAS";
 $headers = 'MIME-Version: 1.0' . "\n";
 $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
@@ -59,6 +60,10 @@ $error .= 'Por favor ingresa tu teléfono de contacto.<br />';
 if($cel && !is_numeric($cel)){
   $error .= 'Por favor ingresa tu teléfono de contacto válido.<br />';
 }
+if(!$message)
+{
+$error .= 'Por favor ingresa un mensaje.<br />';
+}
 if(!$captcha)
 {
 $error .= 'Debe confirmar que no es un robot.<br />';
@@ -93,15 +98,15 @@ $mail->Password = '';
  
 
 $mail->setFrom('cuentas@hubdigital.co', $name);
-$mail->addAddress('david.valbuena@hubdigital.co');     // receptor de mensaje 
+$mail->addAddress('pvillamil@autonoma.edu.co');     // receptor de mensaje 
 $mail->addReplyTo($correo);
-$mail->addCC('soporte@hubdigital.co');
-$mail->addBCC('soporte@hubdigital.co');
+$mail->addCC('servicioalcliente@autonoma.edu.co');
+$mail->addBCC('alejandraquintero@cfmholding.com');
 
 $mail->isHTML(true);                                  // Set email format to HTML
 
-$mail->Subject = 'Contacto Landing Maestría Virtual en Enseñanza de las Ciencias';
-$text= 'NOMBRE: '.$name.'<br> EMAIL: '.$correo.'<br>TELÉFONO: '.$cel.'<br>CIUDAD: '.$ciu.'<br>Termino y condciones'.$term.'<br>ACUERDO: '.$acuerdo.'';
+$mail->Subject = 'Solicitud de Informacion Landing Especialización Auditoría en la Salud';
+$text= 'NOMBRE: '.$name.'<br> EMAIL: '.$correo.'<br>TELÉFONO: '.$cel.'<br>CIUDAD: '.$ciu.'<br>MENSAJE: '.$message.'<br>Termino y condciones'.$term.'<br>ACUERDO: '.$acuerdo.'';
 $mail->Body    = $text;
 $mail->AltBody = $text;
 
@@ -113,13 +118,8 @@ $mail->AltBody = $text;
   //echo 'OK';
 $host  = $_SERVER['HTTP_HOST'];
 $uri   = rtrim(dirname($_SERVER['PHP_SELF']), '/\\');
-echo "<script>window.location='http://www.autonoma.edu.co/agradecimiento';</script>";
+echo "<script>window.location='http://posgrados.autonoma.edu.co/especializacion-auditoria-en-la-salud/gracias.html';</script>";
 }
-
-
-
-
-
 
 }
 else
